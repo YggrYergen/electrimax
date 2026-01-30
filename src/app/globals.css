@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-oswald: var(--font-oswald), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+
+  /* Custom Colors */
+  --color-primary: #1a3b8e;
+  --color-accent: #facc15;
+  --color-secondary: #06b6d4;
+  --color-surface-dark: #0f172a;
+  --color-surface-light: #f8fafc;
+
+  /* Overrides */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-oswald);
+}
+
+@layer base {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f8fafc;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply selection:bg-accent selection:text-slate-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-wider;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-slate-900/40 backdrop-blur-md border border-white/10;
+  }
+
+  .glow-yellow {
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+  }
+
+  .glow-yellow:hover {
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.5);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+  }
+
+  .glow-cyan:hover {
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.5);
+  }
+
+  .electric-grid {
+    background-image: linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
