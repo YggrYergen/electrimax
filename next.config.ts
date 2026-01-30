@@ -8,4 +8,5 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
 };
 
+// Cloudflare Pages Deployment Trigger
 export default nextConfig;
