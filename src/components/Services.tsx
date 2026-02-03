@@ -10,44 +10,87 @@ import {
     Cpu,
     Wrench,
     Activity,
-    Server
+    Home,
+    Camera,
+    NotebookPen,
+    FileCheck
 } from 'lucide-react';
 import { SectionWrapper } from './ui/SectionWrapper';
 import { cn } from '@/lib/utils';
 
 const services = [
     {
-        title: 'Electricidad General',
-        description: 'Montaje de tableros eléctricos, empalmes y certificación TE1 para asegurar el cumplimiento normativo en su propiedad.',
-        icon: Zap,
-        category: 'Infraestructura',
+        title: 'Mantenimiento Industrial',
+        description: 'Optimización y cuidado preventivo/correctivo de sistemas eléctricos en plantas y fábricas.',
+        icon: Wrench,
+        category: 'Industrial',
         size: 'large',
         color: 'bg-primary/20 text-accent border-accent/20'
     },
     {
-        title: 'Soluciones Industriales',
-        description: 'Mantenimiento de motores, bombas y sistemas de automatización industrial para procesos críticos.',
-        icon: Factory,
-        category: 'Industrial',
+        title: 'Instalaciones Domiciliarias',
+        description: 'Servicio técnico especializado para hogares, garantizando seguridad y cumplimiento normativo.',
+        icon: Home,
+        category: 'Residencial',
         size: 'small',
         color: 'bg-blue-900/40 text-blue-400 border-blue-500/20'
     },
     {
-        title: 'Seguridad Electrónica',
-        description: 'Instalación de cámaras CCTV, citofonía inteligente y cercos eléctricos de alta seguridad.',
-        icon: ShieldCheck,
-        category: 'Protección',
+        title: 'Confección de Tableros',
+        description: 'Diseño y armado de tableros de control y distribución según requerimientos técnicos específicos.',
+        icon: Cpu,
+        category: 'Infraestructura',
         size: 'small',
         color: 'bg-slate-800/60 text-slate-300 border-slate-500/20'
     },
     {
-        title: 'Eficiencia Energética',
-        description: 'Sistemas de paneles solares fotovoltaicos y auditorías para reducir el consumo y costo energético.',
-        icon: Sun,
-        category: 'Energía',
+        title: 'Bombas y Motores',
+        description: 'Instalación, reparación y mantenimiento de equipos de bombeo y motores eléctricos.',
+        icon: Activity,
+        category: 'Industrial',
         size: 'medium',
         color: 'bg-secondary/10 text-secondary border-secondary/20'
     },
+    {
+        title: 'Cercos Eléctricos SEC',
+        description: 'Protección perimetral certificada para máxima seguridad en recintos privados e industriales.',
+        icon: ShieldCheck,
+        category: 'Seguridad',
+        size: 'small',
+        color: 'bg-slate-800/60 text-slate-300 border-slate-500/20'
+    },
+    {
+        title: 'Paneles Solares',
+        description: 'Soluciones fotovoltaicas para autoconsumo, reduciendo costos y promoviendo energía limpia.',
+        icon: Sun,
+        category: 'Energía',
+        size: 'small',
+        color: 'bg-secondary/10 text-secondary border-secondary/20'
+    },
+    {
+        title: 'Cámaras CCTV',
+        description: 'Sistemas de videovigilancia de alta resolución con monitoreo remoto para control total.',
+        icon: Camera,
+        category: 'Seguridad',
+        size: 'small',
+        color: 'bg-blue-900/40 text-blue-400 border-blue-500/20'
+    },
+    {
+        title: 'Proyectos Eléctricos',
+        description: 'Planificación integral, diseño de planos y gestión técnica para nuevas construcciones.',
+        icon: NotebookPen,
+        category: 'Ingeniería',
+        size: 'medium',
+        color: 'bg-primary/20 text-accent border-accent/20'
+    },
+    {
+        title: 'Certificaciones SEC TE1',
+        description: 'Tramitación oficial y regularización de instalaciones ante la SEC para asegurar cumplimiento legal.',
+        icon: FileCheck,
+        category: 'Normativa',
+        size: 'small',
+        color: 'bg-secondary/10 text-secondary border-secondary/20'
+    }
 ];
 
 const ServiceCard = ({ service, index }: { service: typeof services[0], index: number }) => (

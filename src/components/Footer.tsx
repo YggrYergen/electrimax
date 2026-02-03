@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
 import { LogoPlaceholder } from './ui/LogoPlaceholder';
+import Image from 'next/image';
 
 export const Footer = () => {
     return (
@@ -19,6 +20,22 @@ export const Footer = () => {
                             Líderes en ingeniería eléctrica con certificación SEC.
                             Comprometidos con la seguridad y la eficiencia energética en Chile.
                         </p>
+                        <div className="flex items-center gap-6 pt-2">
+                            <Image
+                                src="/images/logo-electrimax.svg"
+                                alt="Electrimax"
+                                width={100}
+                                height={100}
+                                className="object-contain filter drop-shadow-[0_0_10px_rgba(234,179,8,0.2)]"
+                            />
+                            <Image
+                                src="/images/logo-sec-footer.png"
+                                alt="SEC"
+                                width={140}
+                                height={140}
+                                className="object-contain"
+                            />
+                        </div>
                         <div className="flex space-x-4">
                             {[Instagram, Facebook, Linkedin].map((Icon, idx) => (
                                 <a key={idx} href="#" className="w-10 h-10 rounded-sm border border-white/10 flex items-center justify-center text-slate-400 hover:text-accent hover:border-accent hover:glow-yellow transition-all">
@@ -53,11 +70,11 @@ export const Footer = () => {
                             </li>
                             <li className="flex items-center space-x-4">
                                 <Phone className="w-5 h-5 text-accent shrink-0" />
-                                <a href="tel:+56912345678" className="text-2xl font-display font-bold text-white hover:text-accent transition-colors tracking-tight">+56 9 1234 5678</a>
+                                <a href="tel:+56952296601" className="text-2xl font-display font-bold text-white hover:text-accent transition-colors tracking-tight">+56 9 5229 6601</a>
                             </li>
                             <li className="flex items-center space-x-4">
                                 <Mail className="w-5 h-5 text-secondary shrink-0" />
-                                <a href="mailto:contacto@electrimax.cl" className="text-slate-400 hover:text-accent transition-colors">contacto@electrimax.cl</a>
+                                <a href="mailto:electrimaxservicios@gmail.com" className="text-slate-400 hover:text-accent transition-colors">electrimaxservicios@gmail.com</a>
                             </li>
                         </ul>
                     </div>
