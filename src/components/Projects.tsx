@@ -6,28 +6,124 @@ import { SectionWrapper } from './ui/SectionWrapper';
 
 const projects = [
     {
-        title: 'Montaje Tablero Industrial',
-        location: 'Quilicura',
-        image: 'https://images.unsplash.com/photo-1590486803833-ffc6f88d2dfd?q=80&w=800&auto=format&fit=crop',
+        title: 'Empalme aéreo media tensión',
+        location: 'Sector Rural, V Región',
+        image: '/images/1.jpeg',
+        category: 'Distribución'
+    },
+    {
+        title: 'Reparación de líneas aéreas',
+        location: 'Olmué',
+        image: '/images/2.jpeg',
+        category: 'Mantenimiento'
+    },
+    {
+        title: 'Montaje de tablero de distribución',
+        location: 'Instalación de protecciones, Santiago',
+        image: '/images/3.jpeg',
         category: 'Industrial'
     },
     {
-        title: 'Instalación Solar Residencial',
-        location: 'Las Condes',
-        image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop',
-        category: 'Energía'
-    },
-    {
-        title: 'Automatización Bodegas',
-        location: 'Pudahuel',
-        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop',
+        title: 'Motorización de portón batiente',
+        location: 'Condominio, Las Condes',
+        image: '/images/4.jpeg',
         category: 'Automatización'
     },
     {
-        title: 'Electrificación Edificio',
-        location: 'Viña del Mar',
-        image: 'https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?q=80&w=800&auto=format&fit=crop',
+        title: 'Canalización embutida en tabiquería',
+        location: 'Obra habitacional, Viña del Mar',
+        image: '/images/5.jpeg',
         category: 'Construcción'
+    },
+    {
+        title: 'Mantenimiento preventivo fotovoltaico',
+        location: 'Limpieza y ajuste de paneles, Colina',
+        image: '/images/6.jpeg',
+        category: 'Energía'
+    },
+    {
+        title: 'Instalación solar residencial',
+        location: 'Sistema On-Grid, Casablanca',
+        image: '/images/7.jpeg',
+        category: 'Energía'
+    },
+    {
+        title: 'Planta fotovoltaica domiciliaria',
+        location: 'Generación limpia, Quilpué',
+        image: '/images/8.jpeg',
+        category: 'Energía'
+    },
+    {
+        title: 'Instalación de poste de empalme',
+        location: 'Faena industrial, Pudahuel',
+        image: '/images/9.jpeg',
+        category: 'Industrial'
+    },
+    {
+        title: 'Montaje de medidores certificados',
+        location: 'Normalización eléctrica SEC, Quilicura',
+        image: '/images/10.jpeg',
+        category: 'Certificación'
+    },
+    {
+        title: 'Conexión de bomba de pozo',
+        location: 'Sistema de riego, Curacaví',
+        image: '/images/11.jpeg',
+        category: 'Automatización'
+    },
+    {
+        title: 'Canalización en estructura metálica',
+        location: 'Instalación Galpón, Lampa',
+        image: '/images/12.jpeg',
+        category: 'Construcción'
+    },
+    {
+        title: 'Tendido de cableado de potencia',
+        location: 'Postación particular, V Región',
+        image: '/images/13.jpeg',
+        category: 'Distribución'
+    },
+    {
+        title: 'Iluminación LED decorativa en mobiliario',
+        location: 'Local comercial, Providencia',
+        image: '/images/14.jpeg',
+        category: 'Comercial'
+    },
+    {
+        title: 'Instalación de puesta a tierra',
+        location: 'Hincado de barra Cooperwell, San Bernardo',
+        image: '/images/15.jpeg',
+        category: 'Mantenimiento'
+    },
+    {
+        title: 'Instalación eléctrica en sector cocina',
+        location: 'Local de comida rápida, Santiago',
+        image: '/images/16.jpeg',
+        category: 'Comercial'
+    },
+    {
+        title: 'Supervisión de proyecto fotovoltaico',
+        location: 'Instalación terminada, Quinta Región',
+        image: '/images/17.jpeg',
+        category: 'Energía'
+    },
+    {
+        title: 'Matriz de paneles solares sobre cubierta',
+        location: 'Alta eficiencia energética, Melipilla',
+        image: '/images/18.jpeg',
+        category: 'Energía'
+    },
+    {
+        title: 'Conexión aérea en acometida',
+        location: 'Poste de madera, Sector Rural',
+        image: '/images/19.jpeg',
+        category: 'Distribución'
+    },
+    {
+        title: 'Modernización de tablero general',
+        location: 'Cambio de componentes y rotulado, Quilicura',
+        image: '/images/20.jpeg',
+        category: 'Industrial'
     }
 ];
 
